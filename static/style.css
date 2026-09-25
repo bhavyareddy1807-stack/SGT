@@ -1,0 +1,255 @@
+:root {
+    --primary: #2563eb;
+    --bg-main: #f1f5f9;
+    --card-bg: #ffffff;
+    --border: #cbd5e1;
+    --text: #0f172a;
+    --subtext: #475569;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text);
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+/* Navigation Header */
+.nav-bar {
+    background: #1e293b;
+    color: white;
+    padding: 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link { color: #38bdf8; text-decoration: none; font-weight: 600; }
+
+.container, .form-card {
+    max-width: 950px;
+    margin: 30px auto;
+    background: var(--card-bg);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* 3-Line Structured Form Layout */
+.line-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.field-group { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+
+label { font-size: 12px; font-weight: 700; color: var(--subtext); text-transform: uppercase; }
+
+input {
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.setup-group { display: flex; gap: 6px; }
+
+.subjects-box { margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
+.subject-row { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 8px; }
+
+button { cursor: pointer; border: none; border-radius: 5px; font-weight: 600; }
+.btn-submit { width: 100%; margin-top: 20px; background: var(--primary); color: white; padding: 12px; font-size: 15px; }
+.btn-sub { background: #e2e8f0; color: #1e293b; padding: 0 12px; }
+
+/* Dashboard & Excel-Style Table Cards */
+.search-card {
+    background: var(--card-bg);
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.search-card input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.student-excel-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.info-summary-bar {
+    background: #f8fafc;
+    padding: 14px 18px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.info-line { display: flex; gap: 24px; font-size: 14px; margin-bottom: 6px; }
+.info-line:last-child { margin-bottom: 0; }
+.info-line span { color: var(--subtext); }
+.info-line strong { color: var(--text); }
+
+.gpa-badge {
+    margin-left: auto;
+    background: #dcfce7;
+    color: #15803d;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+/* Excel Sheet Style Table */
+.excel-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.excel-table th, .excel-table td {
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.excel-table th { background: #f1f5f9; color: var(--subtext); font-weight: 700; }
+
+.action-bar { padding: 10px 18px; background: #fafafa; display: flex; justify-content: flex-end; }
+.delete-btn { background: #fee2e2; color: #dc2626; padding: 6px 12px; font-size: 12px; }:root {
+    --primary: #2563eb;
+    --bg-main: #f1f5f9;
+    --card-bg: #ffffff;
+    --border: #cbd5e1;
+    --text: #0f172a;
+    --subtext: #475569;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text);
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+/* Navigation Header */
+.nav-bar {
+    background: #1e293b;
+    color: white;
+    padding: 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link { color: #38bdf8; text-decoration: none; font-weight: 600; }
+
+.container, .form-card {
+    max-width: 950px;
+    margin: 30px auto;
+    background: var(--card-bg);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* 3-Line Structured Form Layout */
+.line-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.field-group { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+
+label { font-size: 12px; font-weight: 700; color: var(--subtext); text-transform: uppercase; }
+
+input {
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.setup-group { display: flex; gap: 6px; }
+
+.subjects-box { margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
+.subject-row { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 8px; }
+
+button { cursor: pointer; border: none; border-radius: 5px; font-weight: 600; }
+.btn-submit { width: 100%; margin-top: 20px; background: var(--primary); color: white; padding: 12px; font-size: 15px; }
+.btn-sub { background: #e2e8f0; color: #1e293b; padding: 0 12px; }
+
+/* Dashboard & Excel-Style Table Cards */
+.search-card {
+    background: var(--card-bg);
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.search-card input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.student-excel-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.info-summary-bar {
+    background: #f8fafc;
+    padding: 14px 18px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.info-line { display: flex; gap: 24px; font-size: 14px; margin-bottom: 6px; }
+.info-line:last-child { margin-bottom: 0; }
+.info-line span { color: var(--subtext); }
+.info-line strong { color: var(--text); }
+
+.gpa-badge {
+    margin-left: auto;
+    background: #dcfce7;
+    color: #15803d;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+/* Excel Sheet Style Table */
+.excel-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.excel-table th, .excel-table td {
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.excel-table th { background: #f1f5f9; color: var(--subtext); font-weight: 700; }
+
+.action-bar { padding: 10px 18px; background: #fafafa; display: flex; justify-content: flex-end; }
+.delete-btn { background: #fee2e2; color: #dc2626; padding: 6px 12px; font-size: 12px; }

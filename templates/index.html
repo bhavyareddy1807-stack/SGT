@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - Grade Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <h2>Engineering Grade Tracker</h2>
+        <a href="/dashboard" class="nav-link">Go to Dashboard & Search Records →</a>
+    </div>
+
+    <div class="form-card">
+        <h2>New Student Entry</h2>
+        <form id="studentForm">
+            <!-- Line 1: Basic Identity -->
+            <div class="line-row">
+                <div class="field-group flex-2">
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+                <div class="field-group flex-1">
+                    <label>USN</label>
+                    <input type="text" id="usn" placeholder="1RV23CS001" required>
+                </div>
+            </div>
+
+            <!-- Line 2: Academic Metadata -->
+            <div class="line-row">
+                <div class="field-group">
+                    <label>Class & Section</label>
+                    <input type="text" id="class_sec" placeholder="4th Sem - A" required>
+                </div>
+                <div class="field-group">
+                    <label>Roll No</label>
+                    <input type="text" id="roll_no" placeholder="042" required>
+                </div>
+                <div class="field-group">
+                    <label>Attendance (%)</label>
+                    <input type="number" id="attendance" placeholder="85" min="0" max="100" step="0.1" required>
+                </div>
+            </div>
+
+            <!-- Line 3: Contact & Subject Setup -->
+            <div class="line-row">
+                <div class="field-group flex-2">
+                    <label>Email Address</label>
+                    <input type="email" id="email" placeholder="student@eng.edu" required>
+                </div>
+                <div class="field-group flex-1">
+                    <label>No. of Subjects</label>
+                    <div class="setup-group">
+                        <input type="number" id="numSubjects" min="1" max="10" value="3">
+                        <button type="button" id="generateBtn" class="btn-sub">Configure</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="subjectsContainer" class="subjects-box"></div>
+
+            <button type="submit" class="btn-submit">Save Record & Go to Dashboard</button>
+        </form>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

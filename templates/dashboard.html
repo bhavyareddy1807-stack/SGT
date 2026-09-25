@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <h2>Student Records Dashboard</h2>
+        <a href="/" class="nav-link">+ Add New Student</a>
+    </div>
+
+    <div class="container">
+        <!-- Prominent Search Bar -->
+        <div class="search-card">
+            <input type="text" id="searchInput" placeholder="🔍 Search student by Name, USN, Roll No, or Class..." onkeyup="filterRecords()">
+        </div>
+
+        <div id="recordsList" class="records-container">
+            <!-- Student Excel Cards rendered here -->
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
